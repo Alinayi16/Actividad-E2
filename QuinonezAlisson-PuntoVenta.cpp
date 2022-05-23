@@ -3,7 +3,7 @@
 //==> Archivo :QuinonezAlisson-PuntoVenta.cpp                         
 //==>Autor: Alisson Quñonez                                    
 //==>Fecha de elaboración:2022-04-29                            
-//==>Fecha ultima actualización:2022-05-17                      
+//==>Fecha ultima actualización:2022-05-20                      
 //=================================================
 #include<iostream>
 using namespace std;
