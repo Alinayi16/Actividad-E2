@@ -2,7 +2,6 @@
 //==> Nombre del programa: comparacion de dos numeros         
 //==>Autor: Alisson Quiñonez                                    
 //==>Fecha de elaboración:2022-04-29
-//==>Fecha de elaboración:2022-04-29
 //==>Fecha ultima actualización:2022-05-20
 //=================================================             
 # include <iostream>
