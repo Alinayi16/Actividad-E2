@@ -1,0 +1,130 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #0056b3; /* Azul más oscuro para mejor contraste */
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #ffdd57; /* Cambiar el color al pasar el cursor */
+}
+
+/* Estilo de la búsqueda */
+.input-group {
+    max-width: 600px;
+    margin: 0 auto; /* Centrar la barra de búsqueda */
+}
+
+.input-group .form-control {
+    border-radius: 0.5rem;
+}
+
+.input-group .btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.input-group .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de las cartas */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    border-radius: 0.75rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Estilo de la imagen en las cartas */
+.card-img-top {
+    border-radius: 0.75rem 0.75rem 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilo de los botones de paginación */
+#pagination-prev, #pagination-next {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#pagination-prev:disabled, #pagination-next:disabled {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+}
+
+#pagination-prev:hover:not(:disabled), #pagination-next:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Estilo del loader */
+#loader .spinner-border {
+    width: 4rem;
+    height: 4rem;
+}
+
+/* Mensaje de no datos */
+#no-data {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #888;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease;
+}
