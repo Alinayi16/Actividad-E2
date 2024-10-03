@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API - Datos Personales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="styles.css"> <!-- Estilos personalizados -->
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <h1 class="text-center mb-4">Consulta de Datos Personales</h1>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        
+
+        <!-- Sección de búsqueda -->
+        <div class="input-group mb-4 shadow-sm">
+            <input type="text" id="search-input" class="form-control" placeholder="Buscar por nombre o ID" aria-label="Buscar datos personales">
+            <button id="search-button" class="btn btn-primary">
+                <i class="bi bi-search"></i> Buscar
+            </button>
+        </div>
+        
+        <!-- Sección de cartas -->
+        <div id="cards-container" class="row row-cols-1 row-cols-md-3 g-4"></div>
+
+        <!-- Paginación -->
+        <div class="d-flex justify-content-center mt-4">
+            <button class="btn btn-primary me-2" id="pagination-prev" disabled>
+                <i class="bi bi-chevron-left"></i> Anterior
+            </button>
+            <button class="btn btn-primary" id="pagination-next">
+                Siguiente <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Loader -->
+        <div id="loader" class="text-center mt-5" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+        </div>
+
+        <!-- Mensaje de no datos -->
+        <p id="no-data" class="text-center text-muted mt-4" style="display: none;">No hay datos disponibles.</p>
+    </div>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
